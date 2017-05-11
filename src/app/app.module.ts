@@ -15,14 +15,17 @@ import { NestedParentComponent } from './nested-component/parent.component';
 /*
 import { ParentToChildInputComponent } from './parent-to-child-input/parent-to-child-input.component';
 import { ChildInputComponent } from './parent-to-child-input/child-input.component';
-*/
 import { ParentToChildInputsComponent } from './parent-to-child-inputs/parent-to-child-inputs.component';
 import { ChildInputsComponent } from './parent-to-child-inputs/child-inputs.component';
+*/
+import { ChildComponent } from './child-to-parent/child.component';
+import { ChildToParentComponent } from './child-to-parent/child-to-parent.component';
+
 
 @NgModule({
   declarations: [
-    ChildInputsComponent,
-    ParentToChildInputsComponent
+    ChildComponent,
+    ChildToParentComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +33,6 @@ import { ChildInputsComponent } from './parent-to-child-inputs/child-inputs.comp
     HttpModule
   ],
   providers: [],
-  bootstrap: [ParentToChildInputsComponent]
+  bootstrap: [ChildToParentComponent]
 })
 export class AppModule { }
