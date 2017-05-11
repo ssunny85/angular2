@@ -5,15 +5,24 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 //import { HelloComponent } from './hello.component';
+//중첩
+/*
 import { NestedGrandsonComponent } from './nested-component/grandson.component';
 import { NestedChildComponent } from './nested-component/child.component';
 import { NestedParentComponent } from './nested-component/parent.component';
+*/
+//값전달
+/*
+import { ParentToChildInputComponent } from './parent-to-child-input/parent-to-child-input.component';
+import { ChildInputComponent } from './parent-to-child-input/child-input.component';
+*/
+import { ParentToChildInputsComponent } from './parent-to-child-inputs/parent-to-child-inputs.component';
+import { ChildInputsComponent } from './parent-to-child-inputs/child-inputs.component';
 
 @NgModule({
   declarations: [
-    NestedGrandsonComponent,
-    NestedChildComponent,
-    NestedParentComponent
+    ChildInputsComponent,
+    ParentToChildInputsComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +30,6 @@ import { NestedParentComponent } from './nested-component/parent.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [NestedParentComponent]
+  bootstrap: [ParentToChildInputsComponent]
 })
 export class AppModule { }
