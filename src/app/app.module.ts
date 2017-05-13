@@ -17,15 +17,18 @@ import { ParentToChildInputComponent } from './parent-to-child-input/parent-to-c
 import { ChildInputComponent } from './parent-to-child-input/child-input.component';
 import { ParentToChildInputsComponent } from './parent-to-child-inputs/parent-to-child-inputs.component';
 import { ChildInputsComponent } from './parent-to-child-inputs/child-inputs.component';
-*/
 import { ChildComponent } from './child-to-parent/child.component';
 import { ChildToParentComponent } from './child-to-parent/child-to-parent.component';
-
+*/
+import { ViewChildComponent } from './viewchild/viewchild.component';
+import { ItemComponent } from './viewchild/viewchild.component';
+import { Item } from './viewchild/viewchild.component';
 
 @NgModule({
   declarations: [
-    ChildComponent,
-    ChildToParentComponent
+    Item,
+    ItemComponent,
+    ViewChildComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,6 @@ import { ChildToParentComponent } from './child-to-parent/child-to-parent.compon
     HttpModule
   ],
   providers: [],
-  bootstrap: [ChildToParentComponent]
+  bootstrap: [ViewChildComponent]
 })
 export class AppModule { }
