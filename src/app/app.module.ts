@@ -20,15 +20,21 @@ import { ChildInputsComponent } from './parent-to-child-inputs/child-inputs.comp
 import { ChildComponent } from './child-to-parent/child.component';
 import { ChildToParentComponent } from './child-to-parent/child-to-parent.component';
 */
+//viewchild
+/*
 import { ViewChildComponent } from './viewchild/viewchild.component';
 import { ItemComponent } from './viewchild/viewchild.component';
 import { Item } from './viewchild/viewchild.component';
+*/
+import { ComponentStyleComponent } from './component-style/component-style.component';
+import { FirstDepthComponent } from './component-style/first-child.component';
+import { SecondDepthComponent } from './component-style/second-child.component';
 
 @NgModule({
   declarations: [
-    Item,
-    ItemComponent,
-    ViewChildComponent
+    ComponentStyleComponent,
+    FirstDepthComponent,
+    SecondDepthComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +42,6 @@ import { Item } from './viewchild/viewchild.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [ViewChildComponent]
+  bootstrap: [ComponentStyleComponent]
 })
 export class AppModule { }
