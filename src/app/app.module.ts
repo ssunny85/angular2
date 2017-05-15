@@ -26,15 +26,17 @@ import { ViewChildComponent } from './viewchild/viewchild.component';
 import { ItemComponent } from './viewchild/viewchild.component';
 import { Item } from './viewchild/viewchild.component';
 */
+//component style
+/*
 import { ComponentStyleComponent } from './component-style/component-style.component';
 import { FirstDepthComponent } from './component-style/first-child.component';
 import { SecondDepthComponent } from './component-style/second-child.component';
+*/
+import { MockComponent } from './mock/mock.component';
 
 @NgModule({
   declarations: [
-    ComponentStyleComponent,
-    FirstDepthComponent,
-    SecondDepthComponent
+    MockComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +44,6 @@ import { SecondDepthComponent } from './component-style/second-child.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [ComponentStyleComponent]
+  bootstrap: [MockComponent]
 })
 export class AppModule { }
