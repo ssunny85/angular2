@@ -4,8 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { HelloComponent } from './hello.component';
+import { CoreTestComponent } from './core-test/core-test.component';
 
 //중첩
 /*
@@ -41,14 +43,16 @@ import { MockComponent } from './mock/mock.component';
 
 @NgModule({
   declarations: [
+    AppComponent,
     HelloComponent,
-    AppComponent
+    CoreTestComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule.forRoot({nickName : 'Happy'})
   ],
   providers: [],
   bootstrap: [AppComponent]
