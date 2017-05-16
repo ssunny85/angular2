@@ -4,7 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-//import { HelloComponent } from './hello.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HelloComponent } from './hello.component';
+
 //중첩
 /*
 import { NestedGrandsonComponent } from './nested-component/grandson.component';
@@ -32,18 +34,23 @@ import { ComponentStyleComponent } from './component-style/component-style.compo
 import { FirstDepthComponent } from './component-style/first-child.component';
 import { SecondDepthComponent } from './component-style/second-child.component';
 */
+//mock
+/*
 import { MockComponent } from './mock/mock.component';
+*/
 
 @NgModule({
   declarations: [
-    MockComponent
+    HelloComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
-  bootstrap: [MockComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
