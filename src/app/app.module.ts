@@ -40,21 +40,18 @@ import { SecondDepthComponent } from './component-style/second-child.component';
 /*
 import { MockComponent } from './mock/mock.component';
 */
+import { TwowayNgmodelComponent } from './twoway-ngmodel/twoway-ngmodel.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HelloComponent,
-    CoreTestComponent
+    TwowayNgmodelComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    AppRoutingModule,
-    CoreModule.forRoot({nickName : 'Happy'})
-  ],
+    HttpModule
+   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [TwowayNgmodelComponent]
 })
 export class AppModule { }
