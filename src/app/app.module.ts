@@ -40,11 +40,20 @@ import { SecondDepthComponent } from './component-style/second-child.component';
 /*
 import { MockComponent } from './mock/mock.component';
 */
-import { TwowayNgmodelComponent } from './twoway-ngmodel/twoway-ngmodel.component';
+//import { TwowayNgmodelComponent } from './twoway-ngmodel/twoway-ngmodel.component';
+
+/*
+import { MyElementRef } from './element-rendering/element-rendering.component';
+import { MyRenderer } from './element-rendering/element-rendering.component';
+import { ElementRendering } from './element-rendering/element-rendering.component';
+*/
+import { myDirective } from './directive-ex/ex1.component';
+import { PassToDirectiveComponent } from './directive-ex/ex1.component';
 
 @NgModule({
   declarations: [
-    TwowayNgmodelComponent
+    myDirective,
+    PassToDirectiveComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +61,6 @@ import { TwowayNgmodelComponent } from './twoway-ngmodel/twoway-ngmodel.componen
     HttpModule
    ],
   providers: [],
-  bootstrap: [TwowayNgmodelComponent]
+  bootstrap: [PassToDirectiveComponent]
 })
 export class AppModule { }
