@@ -47,13 +47,13 @@ import { MyElementRef } from './element-rendering/element-rendering.component';
 import { MyRenderer } from './element-rendering/element-rendering.component';
 import { ElementRendering } from './element-rendering/element-rendering.component';
 */
-import { myDirective } from './directive-ex/ex1.component';
-import { PassToDirectiveComponent } from './directive-ex/ex1.component';
+import { CustomAttrDirective } from './directive-ex/ex2.component';
+import { CustomAttrComponent } from './directive-ex/ex2.component';
 
 @NgModule({
   declarations: [
-    myDirective,
-    PassToDirectiveComponent
+    CustomAttrDirective,
+    CustomAttrComponent
   ],
   imports: [
     BrowserModule,
@@ -61,6 +61,6 @@ import { PassToDirectiveComponent } from './directive-ex/ex1.component';
     HttpModule
    ],
   providers: [],
-  bootstrap: [PassToDirectiveComponent]
+  bootstrap: [CustomAttrComponent]
 })
 export class AppModule { }
