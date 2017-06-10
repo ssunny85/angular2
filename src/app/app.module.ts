@@ -47,13 +47,15 @@ import { MyElementRef } from './element-rendering/element-rendering.component';
 import { MyRenderer } from './element-rendering/element-rendering.component';
 import { ElementRendering } from './element-rendering/element-rendering.component';
 */
+/*
 import { CustomAttrDirective } from './directive-ex/ex2.component';
 import { CustomAttrComponent } from './directive-ex/ex2.component';
+*/
+import { BuileInValidatorComponent } from './built-in-validator/built-in-validator.component';
 
 @NgModule({
   declarations: [
-    CustomAttrDirective,
-    CustomAttrComponent
+    BuileInValidatorComponent
   ],
   imports: [
     BrowserModule,
@@ -61,6 +63,6 @@ import { CustomAttrComponent } from './directive-ex/ex2.component';
     HttpModule
    ],
   providers: [],
-  bootstrap: [CustomAttrComponent]
+  bootstrap: [BuileInValidatorComponent]
 })
 export class AppModule { }
