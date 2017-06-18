@@ -8,7 +8,7 @@ import { UserServiceConfig } from './user.service';
     imports: [CommonModule],
     exports: [TitleComponent],
     declarations: [TitleComponent],
-    providers: [UserService, UserServiceConfig]
+    providers: [UserService]
 })
 export class CoreModule{
     constructor(@Optional() @SkipSelf() parentModule:CoreModule){

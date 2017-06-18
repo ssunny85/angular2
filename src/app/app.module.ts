@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
-import { AppRoutingModule } from './app-routing.module';
-import { HelloComponent } from './hello.component';
-import { CoreTestComponent } from './core-test/core-test.component';
+//import { AppComponent } from './app.component';
+//import { CoreModule } from './core/core.module';
+//import { AppRoutingModule } from './app-routing.module';
+//import { HelloComponent } from './hello.component';
+//import { CoreTestComponent } from './core-test/core-test.component';
 
 //중첩
 /*
@@ -51,11 +51,11 @@ import { ElementRendering } from './element-rendering/element-rendering.componen
 import { CustomAttrDirective } from './directive-ex/ex2.component';
 import { CustomAttrComponent } from './directive-ex/ex2.component';
 */
-import { BuileInValidatorComponent } from './built-in-validator/built-in-validator.component';
+import { FormReferenceVariableComponent } from './form-reference-variable/form-reference-variable.component';
 
 @NgModule({
   declarations: [
-    BuileInValidatorComponent
+    FormReferenceVariableComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +63,6 @@ import { BuileInValidatorComponent } from './built-in-validator/built-in-validat
     HttpModule
    ],
   providers: [],
-  bootstrap: [BuileInValidatorComponent]
+  bootstrap: [FormReferenceVariableComponent]
 })
 export class AppModule { }
